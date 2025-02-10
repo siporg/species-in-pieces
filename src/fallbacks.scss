@@ -1,0 +1,308 @@
+@import "bourbon/bourbon";
+
+.nowebkitbrowser {
+
+	.browser-statement {
+		display: block;
+		background: #f03252;
+		background-size: 85px 62px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		padding: 0;
+		z-index: 999999;
+		padding: 25px 0px 23px;
+		@include transition(.3s);
+		
+		p {
+			line-height: 1.3em;
+			color: #181818;
+			text-align: center;
+			width: 80%;
+			font-size: 1.3em;
+			letter-spacing: .09em;
+			margin-left: 10%;
+			a {
+				color:#fff;
+				display: inline-block;
+			}
+		}
+		.close {
+			position: absolute;
+			right: 0;
+			top: 8px;
+			@include transform(scale(.45));
+			.icon {
+				&::before, &::after {
+					background: #181818;
+				}
+			}
+			&::after {
+				background-color: #FFF;
+			}
+		}
+		&.inactive {
+			top: -170px
+		}
+	}
+
+	#animalchanger {
+		&::before {
+			content: "";
+			height: 100%; width: 100%;
+			position: absolute;
+			top: 0; left: 0;
+			background: url('/img/fallbacks/smash-fake.png') no-repeat center center / cover;
+			@include transition(.5s);
+			opacity: 0;
+		}
+	}
+	body.preloader, .smash, .all-animals {
+		#animalchanger:before { opacity: 1;}
+	}
+
+	.shard-wrap {
+
+		opacity:0;
+		@include transition-delay(0.1s);
+		@include transition-duration(0.3s);
+		@include transform(translateY(10px));
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		.shard {
+			display: none;
+		}
+
+		&:nth-child(1) {
+			background-image: url('/img/fallbacks/fallback_crow.png');
+		}
+		&:nth-child(2) {
+			background-image: url('/img/fallbacks/fallback_vaquita.png');
+		}
+		&:nth-child(3) {
+			background-image: url('/img/fallbacks/fallback_tamarin.png');
+		}
+		&:nth-child(4) {
+			background-image: url('/img/fallbacks/fallback_frog.png');
+		}
+		&:nth-child(5) {
+			background-image: url('/img/fallbacks/fallback_owl.png');
+		}
+		&:nth-child(6) {
+			background-image: url('/img/fallbacks/fallback_turtle.png');
+		}
+		&:nth-child(7) {
+			background-image: url('/img/fallbacks/fallback_oryx.png');
+		}
+		&:nth-child(8) {
+			background-image: url('/img/fallbacks/fallback_iguana.png');
+		}
+		&:nth-child(9) {
+			background-image: url('/img/fallbacks/fallback_seahorse.png');
+		}
+		&:nth-child(10) {
+			background-image: url('/img/fallbacks/fallback_armadillo.png');
+		}
+		&:nth-child(11) {
+			background-image: url('/img/fallbacks/fallback_sloth.png');
+		}
+		&:nth-child(12) {
+			background-image: url('/img/fallbacks/fallback_kakapo.png');
+		}
+		&:nth-child(13) {
+			background-image: url('/img/fallbacks/fallback_echidna.png');
+		}
+		&:nth-child(14) {
+			background-image: url('/img/fallbacks/fallback_penguin.png');
+		}
+		&:nth-child(15) {
+			background-image: url('/img/fallbacks/fallback_damselfly.png');
+		}
+		&:nth-child(16) {
+			background-image: url('/img/fallbacks/fallback_bear.png');
+		}
+		&:nth-child(17) {
+			background-image: url('/img/fallbacks/fallback_parrotfish.png');
+		}
+		&:nth-child(18) {
+			background-image: url('/img/fallbacks/fallback_camel.png');
+		}
+		&:nth-child(19) {
+			background-image: url('/img/fallbacks/fallback_butterfly.png');
+		}
+		&:nth-child(20) {
+			background-image: url('/img/fallbacks/fallback_ostrich.png');
+		}
+		&:nth-child(21) {
+			background-image: url('/img/fallbacks/fallback_panda.png');
+		}
+		&:nth-child(22) {
+			background-image: url('/img/fallbacks/fallback_tapir.png');
+		}
+		&:nth-child(23) { 
+			background-image: url('/img/fallbacks/fallback_sifaka.png');
+		}
+		&:nth-child(24) {
+			background-image: url('/img/fallbacks/fallback_lynx.png');
+		}
+		&:nth-child(25) {
+			background-image: url('/img/fallbacks/fallback_rhino.png');
+		}
+		&:nth-child(26) {
+			background-image: url('/img/fallbacks/fallback_peccary.png');
+		}
+		&:nth-child(27) {
+			background-image: url('/img/fallbacks/fallback_okapi.png');
+		}
+		&:nth-child(28) {
+			background-image: url('/img/fallbacks/fallback_loris.png');
+		}
+		&:nth-child(29) {
+			background-image: url('/img/fallbacks/fallback_hirola.png');
+		}
+		&:nth-child(30) {
+			background-image: url('/img/fallbacks/fallback_drill.png');
+		}
+	}
+	.shadow {
+		display: none;
+	}
+
+	.intro-sequence {
+		.loading {
+			margin-top: -30px;
+			font-size: 2em;
+		}
+		.intro-content {
+
+			h1 {
+				display: block;
+				.thirty-pieces-titles & {
+					opacity: 1;
+				}
+			}
+			margin-top: -7%;
+		}
+	}
+	
+	.thirty-pieces-titles h1 {
+		opacity: 1;
+	}
+
+
+	&:not(.small-nav) .animal-nav-content ul {
+		margin-top: -162px;
+	}
+
+	.stage {
+		.main-nav > li:nth-child(1) ul {
+			&::before, &::after {
+				display: none;
+			}
+			li {
+				display: none;
+			} 
+			background: url('/img/fallbacks/ui_all.png') no-repeat center center / 22px 6px;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+
+		}
+	}
+
+	#animalchanger .level-one .level-two {
+
+		.animal-mover {
+			@include transform(translateX(0));
+		}
+	}
+
+	.shard-wrap {
+		&.active {
+			opacity: 1;
+			@include transform(translateY(0px));
+			@include transition-delay(.4s);
+		}
+	}
+
+	.all-animals, .smash {
+
+		.level-one {
+			opacity: 0;
+			@include transform(scale(.6) translateY(-14%)!important);
+			@include transition(.3s !important);
+		}
+	}
+
+	.stats-pie {
+		span {
+			&::before {
+				height: 45%;
+				width: 45%;
+				top: 29%;
+				left: 29%;
+			}
+		}
+	}
+
+	.statistics {
+		.chart {
+			.chart-bg, .chart-shard-wrap {
+				display: none;
+			}
+			.chart-info {
+				margin-top: 18px;
+				p {
+					position: relative;
+					text-align: left;
+					top: auto; left: auto;
+
+
+					@include transform(translateX(0) !important);
+
+					span {
+						@include transform(translateX(0) !important);
+						margin-top: 0 !important;
+						position: relative;
+						top: auto; left: auto;
+						padding: 0.6em 0 0.5em;
+						display: block;
+						border-bottom: 1px solid rgba(240, 50, 82, 0.3);
+						em {
+							opacity: 1 !important; 
+							width: 140px;
+							display: inline-block;
+							font-size: 1.6em;
+							line-height: 1.3em;
+						}
+						.number {
+							position: relative !important;
+							opacity: 1 !important;
+							top: auto !important; left: auto !important;
+							@include transform(translateX(0) !important);
+							.sep-line {
+								display: none !important;
+							}
+						}
+					}
+
+					&:nth-child(9) span {
+						font-size: 1em;
+						line-height: .6em;
+						border-bottom: none;
+					}
+				}
+			}
+			&.one-stat .chart-info {
+				@for $i from 1 through 8 {
+
+				    p:nth-child(#{$i}) {
+				        display: none;
+				    }
+				}
+			}
+		}
+	}
+}
