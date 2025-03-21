@@ -278,7 +278,7 @@ const animalVideo = [
   '//www.youtube.com/embed/FDzdbJRvWoo?showinfo=0&iv_load_policy=3&controls=0&start=15&vq=hd720',
   '//www.youtube.com/embed/xLvn7UDssco?showinfo=0&iv_load_policy=3&controls=0&start=0&vq=hd720',
   '//www.youtube.com/embed/rhfJILx1eD0?showinfo=0&iv_load_policy=3&controls=0&start=27&vq=hd720',
-  '//www.youtube.com/embed/2mzUxrFXdBE?showinfo=0&iv_load_policy=3&controls=0&start=8&vq=hd720',
+  '//www.youtube.com/embed/110iUX1Ursk?showinfo=0&iv_load_policy=3&controls=0&start=8&vq=hd720',
   '//www.youtube.com/embed/qfZvHR21krE?showinfo=0&iv_load_policy=3&controls=0&start=77&vq=hd720',
   '//www.youtube.com/embed/bhTU__jVP8E?showinfo=0&iv_load_policy=3&controls=0&start=26&vq=hd720',
   '//www.youtube.com/embed/5oFSLQn9nNE?showinfo=0&iv_load_policy=3&controls=0&start=11&vq=hd720',
